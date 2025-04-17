@@ -8,7 +8,7 @@
     "stash": "git stash && git stash drop"
   },
   "dependencies": {
-    "@adiwajshing/baileys": "^6.6.0",
+    "@adiwajshing/baileys": "^6.5.0",
     "@adiwajshing/keyed-db": "^0.3.0",
     "@blackamda/telegram-image-url": "^1.0.0",
     "@bochilteam/scraper": "^5.0.0",
